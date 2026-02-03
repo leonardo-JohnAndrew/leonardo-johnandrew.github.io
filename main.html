@@ -1,0 +1,39 @@
+<head>
+  <style>
+    body{
+      height: auto;
+      margin:0;
+      padding: 0;
+      background: #000;
+    }
+    p{
+      font-size: 8px;
+      line-height: 8px;
+      text-align: justify;
+      -webkit-background-size:cover;
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background: url("nurse.jpg") no-repeat center center/cover;
+      background-attachment: fixed;
+      -webkit-background-clip:text;
+      background-clip: text;
+      
+      -webkit-text-fill-color:transparent;
+      color:rgba(255, 255, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div id = "content">
+    <p></p>
+  </div>
+</body>
+<script>
+  const p = document.querySelector("#content p");
+  let text ="";
+  for(let i =0; i<200;i++){
+    text += "Yeah, yeah, yeah-yeah, yeah I'm on my way Hold on, hold on I'm on my way Yeah, yeah, yeah-yeah, yeah I'm on my way Don't you want me like I want you, baby? Don't you need me like I need you now? Sleep tomorrow, but tonight, go crazy All you gotta do is just meet me at the Apartment, apartment Apartment, apartment Apartment, apartment Just meet me at the (Uh-huh, uh-huh) Apartment, apartment Apartment, apartment Apartment, apartment Just meet me at the (Uh-huh, uh-huh) Apartment, apartment Apartment, apartment Apartment, apartment Just meet me at the (Uh-huh, uh-huh) Apartment, apartment Apartment, apartment Apartment, apartment Uh, uh-huh, uh-huh "
+  };
+  p.textContent = text;
+</script>
